@@ -9,6 +9,7 @@ const state = {
 document.addEventListener("DOMContentLoaded", () => {
   setupNavbar()
   setupNavbarShadow()
+  readUrlFilter()
   setupFilters()
   setupSearch()
   checkImages()
@@ -114,5 +115,19 @@ function setupNavbarShadow() {
   window.addEventListener("scroll", () => {
     navbar.style.boxShadow =
       window.scrollY > 10 ? "0 4px 16px rgba(0,0,0,0.08)" : "0 2px 10px rgba(0,0,0,0.05)"
+  })
+}
+/* ---------- Open with a filter from the URL (e.g. activities.html?filter=sports) ---------- */
+function readUrlFilter() {
+  const wanted = new URLSearchParams(window.location.search).get("filter")
+  const chips = Array.from(document.querySelectorAll(".chip"))
+  const chip = chips.find(c => c.dataset.filter === wanted)
+  if (!chip) return
+
+  state.filter = wanted
+  chips.forEach(c => {
+    const active = c === chip
+    c.classList.toggle("is-active", active)
+    c.setAttribute("aria-pressed", String(active))
   })
 }

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clubs | StudentHive</title>
+  <meta name="description" content="Explore StudentHive clubs and join a community that matches your interests." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Student<strong>Hive</strong></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="activities.html">Activities</a>
+        <a href="clubs.html" class="active" aria-current="page">Clubs</a>
+        <a href="register.html">Register</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="badge"><i class="fa-solid fa-user-group"></i> Find Your Community</span>
+        <h1>Explore <span class="text-blue">Clubs</span></h1>
+        <p>Find a club that matches your interests, meet people who share your passion and grow with them all year round.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <div class="club-grid">
+        <article class="club-card" style="--c:#2563eb">
+          <div class="club-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <span class="club-tag">Tech</span>
+          <h3>Coding Club</h3>
+          <p>Hands-on coding sessions, hackathon teams and peer learning for web, app and AI projects.</p>
+          <div class="club-actions">
+            <a href="register.html?club=coding" class="btn btn-primary btn-sm">Join Club <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="contact.html" class="club-link">Ask a question</a>
+          </div>
+        </article>
+        <article class="club-card" style="--c:#db2777">
+          <div class="club-icon"><i class="fa-solid fa-music"></i></div>
+          <span class="club-tag">Cultural</span>
+          <h3>Music Club</h3>
+          <p>Singers, instrumentalists and band members. Performs at Music Night and campus festivals.</p>
+          <div class="club-actions">
+            <a href="register.html?club=music" class="btn btn-primary btn-sm">Join Club <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="contact.html" class="club-link">Ask a question</a>
+          </div>
+        </article>
+        <article class="club-card" style="--c:#c026d3">
+          <div class="club-icon"><i class="fa-solid fa-people-group"></i></div>
+          <span class="club-tag">Cultural</span>
+          <h3>Dance Club</h3>
+          <p>Solo and group choreography for Dance Fest and other cultural programmes.</p>
+          <div class="club-actions">
+            <a href="register.html?club=dance" class="btn btn-primary btn-sm">Join Club <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="contact.html" class="club-link">Ask a question</a>
+          </div>
+        </article>
+        <article class="club-card" style="--c:#d97706">
+          <div class="club-icon"><i class="fa-solid fa-trophy"></i></div>
+          <span class="club-tag">Sports</span>
+          <h3>Sports Committee</h3>
+          <p>Organises inter-department tournaments including cricket, football and Sports Day.</p>
+          <div class="club-actions">
+            <a href="register.html?club=sports" class="btn btn-primary btn-sm">Join Club <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="contact.html" class="club-link">Ask a question</a>
+          </div>
+        </article>
+        <article class="club-card" style="--c:#0891b2">
+          <div class="club-icon"><i class="fa-solid fa-camera"></i></div>
+          <span class="club-tag">Arts</span>
+          <h3>Photography Club</h3>
+          <p>Photo walks, editing sessions and exhibitions for beginners and enthusiasts.</p>
+          <div class="club-actions">
+            <a href="register.html?club=photo" class="btn btn-primary btn-sm">Join Club <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="contact.html" class="club-link">Ask a question</a>
+          </div>
+        </article>
+        <article class="club-card" style="--c:#dc2626">
+          <div class="club-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <span class="club-tag">Social Service</span>
+          <h3>Social Service Club</h3>
+          <p>Blood donation camps, tree plantation drives and education outreach.</p>
+          <div class="club-actions">
+            <a href="register.html?club=social" class="btn btn-primary btn-sm">Join Club <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="contact.html" class="club-link">Ask a question</a>
+          </div>
+        </article>
+        <article class="club-card" style="--c:#4f46e5">
+          <div class="club-icon"><i class="fa-solid fa-user-group"></i></div>
+          <span class="club-tag">Leadership</span>
+          <h3>Student Council</h3>
+          <p>Represents students, organises seminars and leadership workshops.</p>
+          <div class="club-actions">
+            <a href="register.html?club=leadership" class="btn btn-primary btn-sm">Join Club <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="contact.html" class="club-link">Ask a question</a>
+          </div>
+        </article>
+        <article class="club-card" style="--c:#7c3aed">
+          <div class="club-icon"><i class="fa-solid fa-masks-theater"></i></div>
+          <span class="club-tag">Arts</span>
+          <h3>Theatre &amp; Drama</h3>
+          <p>Acting, scriptwriting and stage production for campus plays.</p>
+          <div class="club-actions">
+            <a href="register.html?club=drama" class="btn btn-primary btn-sm">Join Club <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="contact.html" class="club-link">Ask a question</a>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo light">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Student<strong>Hive</strong></span>
+        </a>
+        <p class="tagline">Your gateway to a vibrant campus life.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://x.com/" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="clubs.html">Clubs</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="events.html">Event Calendar</a></li>
+          <li><a href="clubs.html">Club Directory</a></li>
+          <li><a href="contact.html">Help &amp; Support</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact Us</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> <span>XYZ University,<br>Chennai, India</span></li>
+          <li><i class="fa-regular fa-envelope"></i> <span><a href="mailto:studenthive@university.edu">studenthive@university.edu</a></span></li>
+          <li><i class="fa-solid fa-phone"></i> <span><a href="tel:+919876543210">+91 98765 43210</a></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="footerYear">2026</span> StudentHive. All rights reserved.</p>
+        <div class="legal">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

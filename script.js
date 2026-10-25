@@ -112,22 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
   updateSlider();
   restartAuto();
 
-  /* ===== Category cards ===== */
-  document.querySelectorAll(".category-card").forEach((card) => {
-    card.addEventListener("click", (e) => {
-      e.preventDefault();
-      console.log(`Category selected: ${card.dataset.category}`);
-    });
-  });
-
-  /* ===== Details buttons ===== */
-  document.querySelectorAll(".details-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const title = btn.closest(".event-body").querySelector("h3").textContent;
-      alert(`Details for: ${title}\n(Connect this to your event details page)`);
-    });
-  });
-
   /* ===== Newsletter validation ===== */
   const form = document.getElementById("newsletterForm");
   const emailInput = document.getElementById("emailInput");
